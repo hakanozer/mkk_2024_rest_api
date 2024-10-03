@@ -8,12 +8,10 @@ import jakarta.ws.rs.core.Response;
 
 public class UserService {
 
-    @Context
-    HttpServletRequest req;
+
 
     public Response login(User user) {
         try {
-            req.getSession().setAttribute("user", user);
            return Util.success(user);
         }catch (Exception ex) {
             return Util.fail("Fail Obj", Response.Status.BAD_REQUEST);

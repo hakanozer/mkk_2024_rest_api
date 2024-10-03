@@ -26,11 +26,6 @@
       <version>3.1.1</version>
     </dependency>
     <dependency>
-      <groupId>org.glassfish.jersey.containers</groupId>
-      <artifactId>jersey-container-servlet</artifactId>
-      <version>3.1.1</version>
-    </dependency>
-    <dependency>
       <groupId>org.glassfish.jersey.media</groupId>
       <artifactId>jersey-media-json-jackson</artifactId>
       <version>3.1.1</version>
@@ -41,11 +36,10 @@
       <version>3.1.1</version>
     </dependency>
     <dependency>
-      <artifactId>jersey-media-json-jackson</artifactId>
-      <groupId>org.glassfish.jersey.media</groupId>
-      <version>3.1.1</version>
+      <groupId>jakarta.activation</groupId>
+      <artifactId>jakarta.activation-api</artifactId>
+      <version>2.0.1</version>
     </dependency>
-
     <dependency>
       <artifactId>jersey-cdi2-se</artifactId>
       <groupId>org.glassfish.jersey.inject</groupId>
@@ -80,17 +74,12 @@
       <artifactId>jackson-module-jaxb-annotations</artifactId>
       <version>2.18.0</version>
     </dependency>
-
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
-      <artifactId>jackson-databind</artifactId>
-      <exclusions>
-        <exclusion>
-          <groupId>com.fasterxml.jackson.module</groupId>
-          <artifactId>jackson-module-jaxb-annotations</artifactId>
-        </exclusion>
-      </exclusions>
+      <artifactId>jackson-core</artifactId>
+      <version>2.18.0</version>
     </dependency>
+
 
   </dependencies>
   <groupId>com.example</groupId>
