@@ -74,12 +74,31 @@
       <version>1.18.30</version>
       <scope>provided</scope>
     </dependency>
+
+    <dependency>
+      <groupId>com.fasterxml.jackson.module</groupId>
+      <artifactId>jackson-module-jaxb-annotations</artifactId>
+      <version>2.18.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <exclusions>
+        <exclusion>
+          <groupId>com.fasterxml.jackson.module</groupId>
+          <artifactId>jackson-module-jaxb-annotations</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+
   </dependencies>
   <groupId>com.example</groupId>
   <modelVersion>4.0.0</modelVersion>
   <name>mkk_2024_rest_api</name>
 
   <packaging>war</packaging>
+
 
   <properties>
     <junit.version>5.9.2</junit.version>
