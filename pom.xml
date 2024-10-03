@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <artifactId>mkk_2024_rest_api</artifactId>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <groupId>org.apache.maven.plugins</groupId>
+        <version>3.3.2</version>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+    <dependency>
+      <artifactId>jakarta.servlet-api</artifactId>
+      <groupId>jakarta.servlet</groupId>
+      <scope>provided</scope>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <artifactId>jersey-container-servlet</artifactId>
+      <groupId>org.glassfish.jersey.containers</groupId>
+      <version>3.1.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.glassfish.jersey.containers</groupId>
+      <artifactId>jersey-container-servlet</artifactId>
+      <version>3.1.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.glassfish.jersey.media</groupId>
+      <artifactId>jersey-media-json-jackson</artifactId>
+      <version>3.1.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.glassfish.jersey.media</groupId>
+      <artifactId>jersey-media-moxy</artifactId>
+      <version>3.1.1</version>
+    </dependency>
+    <dependency>
+      <artifactId>jersey-media-json-jackson</artifactId>
+      <groupId>org.glassfish.jersey.media</groupId>
+      <version>3.1.1</version>
+    </dependency>
+
+    <dependency>
+      <artifactId>jersey-cdi2-se</artifactId>
+      <groupId>org.glassfish.jersey.inject</groupId>
+      <version>3.1.1</version>
+    </dependency>
+    <dependency>
+      <artifactId>weld-se-core</artifactId>
+      <groupId>org.jboss.weld.se</groupId>
+      <version>5.1.0.Final</version>
+    </dependency>
+    <dependency>
+      <artifactId>junit-jupiter-api</artifactId>
+      <groupId>org.junit.jupiter</groupId>
+      <scope>test</scope>
+      <version>${junit.version}</version>
+    </dependency>
+    <dependency>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <groupId>org.junit.jupiter</groupId>
+      <scope>test</scope>
+      <version>${junit.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.30</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+  <groupId>com.example</groupId>
+  <modelVersion>4.0.0</modelVersion>
+  <name>mkk_2024_rest_api</name>
+
+  <packaging>war</packaging>
+
+  <properties>
+    <junit.version>5.9.2</junit.version>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <version>1.0-SNAPSHOT</version>
+</project>
