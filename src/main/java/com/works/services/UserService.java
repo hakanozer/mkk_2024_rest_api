@@ -8,8 +8,6 @@ import jakarta.ws.rs.core.Response;
 
 public class UserService {
 
-
-
     public Response login(User user) {
         try {
            return Util.success(user);

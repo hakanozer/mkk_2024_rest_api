@@ -4,6 +4,7 @@ import com.works.entities.User;
 import com.works.models.Search;
 import com.works.services.UserService;
 import com.works.utls.Util;
+import jakarta.inject.Singleton;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
@@ -16,6 +17,7 @@ import lombok.Getter;
 @Path("user")
 @Consumes("application/json")
 @Produces("application/json")
+@Singleton
 public class UserRestController {
 
     @Context
@@ -24,6 +26,7 @@ public class UserRestController {
     private final UserService userService;
     public UserRestController() {
         userService = new UserService();
+        System.out.println("UserRestController init");
     }
 
     @POST
